@@ -1,0 +1,19 @@
+{
+  "name": "henry/iO-Farm",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Henry",
+      "email": "henrypercydev@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "IoFarm\\": "src/"
+    }
+  },
+  "require": {
+  }
+}
