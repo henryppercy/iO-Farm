@@ -2,7 +2,7 @@
 
 namespace FarmAPI\Entities;
 
-class Pig
+class Pig implements \JsonSerializable
 {
     private int $id;
     private string $name;
@@ -90,8 +90,14 @@ class Pig
         $this->species = $species;
     }
 
-//    public function eat(string $food): string
-//    {
-//        return 'Mmm ' . $food;
-//    }
+    public function jsonSerialize(): array
+    {
+        return [
+            'id' => $this->getId(),
+            'name' => $this->getname(),
+            'weight' => $this->getWeight(),
+            'colour' => $this->getColour(),
+            'species' => $this->getSpecies(),
+        ];
+    }
 }
