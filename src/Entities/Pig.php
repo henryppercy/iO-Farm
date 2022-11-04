@@ -1,4 +1,5 @@
 <?php
+
 namespace IoFarm\Entities;
 
 class Pig
