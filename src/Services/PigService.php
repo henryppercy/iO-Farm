@@ -1,4 +1,5 @@
 <?php
+
 namespace FarmAPI\Services;
 
 use FarmAPI\DataAccess\Database;

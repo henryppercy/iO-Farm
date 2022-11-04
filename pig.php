@@ -1,9 +1,21 @@
 <?php
+
 require 'vendor/autoload.php';
 
-header('Content-Type: application/json; charset=utf-8'); // This will always contain json
+header('Content-Type: application/json; charset=utf-8');
 
-// TODO: Validate $_GET['id']
+use FarmAPI\Validators\IdValidator;
+
+if (!isset($_GET['id']) || !IdValidator::valid($_GET['id'])) {
+    http_response_code(500);
+    $data = [
+        "message" => "Bad Request",
+        "data" => []
+    ];
+    echo json_encode($data, true);
+    exit();
+}
+
 try {
     $pigService = new FarmAPI\Services\PigService();
     $pig = $pigService->getPig($_GET['id']);

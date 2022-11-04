@@ -1,4 +1,5 @@
 <?php
+
 namespace FarmAPI\Hydrators;
 
 use FarmAPI\DataAccess\Database;
