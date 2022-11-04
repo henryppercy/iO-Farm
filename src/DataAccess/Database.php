@@ -1,6 +1,6 @@
 <?php
 
-namespace IoFarm\DataAccess;
+namespace FarmAPI\DataAccess;
 
 class Database
 {

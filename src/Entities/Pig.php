@@ -1,6 +1,6 @@
 <?php
 
-namespace IoFarm\Entities;
+namespace FarmAPI\Entities;
 
 class Pig
 {
