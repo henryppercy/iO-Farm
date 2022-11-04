@@ -1,1 +1,0 @@
-{"version":1,"defects":[],"times":{"IdValidatorTest::testValid_GivenOneReturnTrue":0.003,"IdValidatorTest::testValid_GivenNegativeReturnFalse":0}}
