@@ -6,7 +6,7 @@
 # https://github.com/Sequel-Ace/Sequel-Ace
 #
 # Host: 127.0.0.1 (MySQL 5.7.34)
-# Database: iofarm
+# Database: farm
 # Generation Time: 2022-11-03 01:56:09 +0000
 # ************************************************************
 
