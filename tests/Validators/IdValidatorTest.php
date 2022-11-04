@@ -1,4 +1,5 @@
 <?php
+
 namespace FarmAPI\Validators;
 use PHPUnit\Framework\TestCase;
 
@@ -8,7 +9,7 @@ class IdValidatorTest extends Testcase
     {
         // Arrange
         // Act
-        $actual = FarmAPI\Validators\IdValidator::valid(1);
+        $actual = IdValidator::valid(1);
         // Assert
         $this->assertEquals(true, $actual);
     }
@@ -17,7 +18,7 @@ class IdValidatorTest extends Testcase
     {
         // Arrange
         // Act
-        $actual = FarmAPI\Validators\IdValidator::valid(-1);
+        $actual = IdValidator::valid(-1);
         // Assert
         $this->assertEquals(false, $actual);
     }
